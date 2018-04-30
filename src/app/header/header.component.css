@@ -1,0 +1,43 @@
+.logo {
+    padding: 3em 3em 1em;
+    background-color: #444;
+    color: white;
+}
+
+.logo-text {
+    font-family: 'Gaegu', cursive;
+    font-size: 200%;
+    font-weight: bold;
+    transform: skew(-20deg);
+}
+.nav-wrapper {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    /* padding-left: 3em; */
+    display: flex;
+}
+
+.nav-wrapper > :first-child {
+    margin-left: -0.5em;
+    padding-left: 3.5em;
+}
+
+.nav-wrapper > :last-child {
+    border-right: 1px solid transparent;
+}
+
+.nav-button {
+    background-color: tomato;
+    color: #444;
+    padding: 1em;
+    margin-left: 1px;
+    transform: skew(-20deg);
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: coral;
+    color: whitesmoke;
+}
+
+

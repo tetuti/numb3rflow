@@ -1,0 +1,9 @@
+<div class="letter-canvas-wrapper">
+  <canvas appDrawable (newImage)="predict($event)" width="196" height="196"></canvas>
+  <div *ngIf="topPrediction != undefined" class="prediction-wrapper">
+    {{ 'prediciton' | uppercase }}
+    <div class="predicted-number">
+        {{ topPrediction }}
+    </div>
+  </div>
+</div>
