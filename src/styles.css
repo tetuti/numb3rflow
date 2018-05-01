@@ -50,5 +50,24 @@ body {
 
 :focus {
     outline: none;
+    color: coral;
+    background-color: white;
+}
+
+a {
+    display: inline-block;
+    color: tomato;
+    text-decoration: none;
+    padding: 0.1em;
+    margin: -0.1em;
+}
+
+a:hover {
+    color: white;
+    background-color: coral;
+}
+
+a:active {
+    color: white;
     background-color: coral;
 }
