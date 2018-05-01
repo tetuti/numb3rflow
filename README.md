@@ -1,27 +1,7 @@
-# Kanjiflow
+# numb3rflow
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-## Development server
+This page was made with [Angular](https://github.com/angular/angular) (version 5.2.10) and [tensorFlow.js](https://github.com/tensorflow/tfjs).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Numb3rflow presents the user with a challenge: Inputting 5 digits in a drawable canvas and making the model predict the correct number as fast as possible! The prediciton model used is based on pre-trained model from a convolutional neural network trained on the [MNIST](http://yann.lecun.com/exdb/mnist/) handwritten digit dataset which is comprised of over 60 thousand handwritten digits which have been normalized to 28x28 pixels.
