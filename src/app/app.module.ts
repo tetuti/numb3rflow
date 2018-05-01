@@ -11,6 +11,7 @@ import { FlowComponent } from './flow/flow.component';
 import { FaqComponent } from './faq/faq.component';
 import { TimerService } from './timer.service';
 import { TimerPipe } from './flow/timer.pipe';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TimerPipe } from './flow/timer.pipe';
     TimerPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [TimerService],
   bootstrap: [AppComponent]

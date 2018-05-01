@@ -47,3 +47,8 @@ body {
     padding: 1em 3em;
     background-color: whitesmoke;
 }
+
+:focus {
+    outline: none;
+    background-color: coral;
+}
