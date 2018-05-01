@@ -4,11 +4,11 @@ import { DrawableDirective } from '../drawable.directive';
 import * as tf from '@tensorflow/tfjs';
 
 @Component({
-  selector: 'app-letter-canvas',
-  templateUrl: './letter-canvas.component.html',
-  styleUrls: ['./letter-canvas.component.css']
+  selector: 'app-digit-canvas',
+  templateUrl: './digit-canvas.component.html',
+  styleUrls: ['./digit-canvas.component.css']
 })
-export class LetterCanvasComponent implements OnInit {
+export class DigitCanvasComponent implements OnInit {
 
   model: tf.Model;
   predictions: any;
@@ -23,9 +23,9 @@ export class LetterCanvasComponent implements OnInit {
   }
 
   async loadModel() {
-    console.log('[letterflow] Loading tensor model');
+    console.log('[numb3rflow] Loading tensor model');
     this.model = await tf.loadModel('/assets/model.json');
-    console.log('[letterflow] Tensor model loaded');
+    console.log('[numb3rflow] Tensor model loaded');
   }
 
   async predict(imageData: ImageData) {
@@ -39,7 +39,7 @@ export class LetterCanvasComponent implements OnInit {
       const output = this.model.predict(image) as any;
 
       this.predictions = Array.from(output.dataSync());
-      console.log(`prediction matrix (index equals predicted number)\n[${this.predictions}]`);
+      console.log(`[numb3rflow]\nPrediction matrix (index equals predicted number)\n[${this.predictions}]`);
       let predictedArray = this.predictions as number[]
       this.prediction.emit(predictedArray.reduce((max, x, i, array) => x > array[max] ? i : max, 0));
     });

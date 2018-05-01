@@ -5,7 +5,7 @@
 </div>
 <div class="flex-wrapper">
 
-    <app-letter-canvas (prediction)="onPredict($event)"></app-letter-canvas>
+    <app-digit-canvas (prediction)="onPredict($event)"></app-digit-canvas>
     <div class="challenge-wrapper">
         <div *ngFor="let challenge of challenges" class="challenge">
             {{ challenge }}

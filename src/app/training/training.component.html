@@ -5,7 +5,7 @@
   Once you're done drawing place your mouse outside of the canvas to have the model predict your input!<br>
 </div>
 <div class="flex-wrapper">
-    <app-letter-canvas (prediction)="onPrediction($event)"></app-letter-canvas>
+    <app-digit-canvas (prediction)="onPrediction($event)"></app-digit-canvas>
     <div class="prediction-wrapper">
         {{ 'prediciton' | uppercase }}
         <div class="predicted-number" *ngIf="prediction != undefined">

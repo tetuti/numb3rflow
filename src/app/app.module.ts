@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LetterCanvasComponent } from './letter-canvas/letter-canvas.component';
+import { DigitCanvasComponent } from './digit-canvas/digit-canvas.component';
 import { DrawableDirective } from './drawable.directive';
 import { TrainingComponent } from './training/training.component';
 import { FlowComponent } from './flow/flow.component';
@@ -18,7 +17,7 @@ import { AppRoutingModule } from './/app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LetterCanvasComponent,
+    DigitCanvasComponent,
     DrawableDirective,
     TrainingComponent,
     FlowComponent,
