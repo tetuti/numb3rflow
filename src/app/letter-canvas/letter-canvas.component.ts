@@ -39,7 +39,7 @@ export class LetterCanvasComponent implements OnInit {
       const output = this.model.predict(image) as any;
 
       this.predictions = Array.from(output.dataSync());
-      console.log(`predicition matrix (index equals predicted number)\n[${this.predictions}]`);
+      console.log(`prediction matrix (index equals predicted number)\n[${this.predictions}]`);
       let predictedArray = this.predictions as number[]
       this.prediction.emit(predictedArray.reduce((max, x, i, array) => x > array[max] ? i : max, 0));
     });
