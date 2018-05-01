@@ -7,6 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { LetterCanvasComponent } from './letter-canvas/letter-canvas.component';
 import { DrawableDirective } from './drawable.directive';
 import { TrainingComponent } from './training/training.component';
+import { FlowComponent } from './flow/flow.component';
+import { FaqComponent } from './faq/faq.component';
+import { TimerService } from './timer.service';
+import { TimerPipe } from './flow/timer.pipe';
 
 
 @NgModule({
@@ -15,12 +19,15 @@ import { TrainingComponent } from './training/training.component';
     HeaderComponent,
     LetterCanvasComponent,
     DrawableDirective,
-    TrainingComponent
+    TrainingComponent,
+    FlowComponent,
+    FaqComponent,
+    TimerPipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [TimerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

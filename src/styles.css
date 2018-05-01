@@ -16,13 +16,34 @@ body {
     padding-top: 2em;
 }
 
+.prediction-wrapper {
+    color: #444;
+}
+
+.predicted-number {
+    font-family: 'Gaegu', cursive;
+    font-size: 600%;
+    font-weight: bold;
+}
+
 .highlight {
     color: tomato;
+}
+
+.flex-wrapper {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5em;
+}
+
+.flex-wrapper > * {
+    margin: 0.5em;
 }
 
 
 .container {
     color: #444;
-    padding: 3em;
+    padding: 1em 3em;
     background-color: whitesmoke;
 }

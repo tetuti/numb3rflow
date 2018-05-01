@@ -1,24 +1,3 @@
-.letter-canvas-wrapper {
-    background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2.5em;
-}
-
-.letter-canvas-wrapper > * {
-    margin: 0.5em;
-}
-
-.prediction-wrapper {
-    color: #444;
-}
-
-.predicted-number {
-    font-family: 'Gaegu', cursive;
-    font-size: 600%;
-    font-weight: bold;
-}
-
 canvas {
     flex: initial;
     cursor: crosshair;

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
 import { DrawableDirective } from '../drawable.directive';
 
 import * as tf from '@tensorflow/tfjs';
@@ -12,7 +12,7 @@ export class LetterCanvasComponent implements OnInit {
 
   model: tf.Model;
   predictions: any;
-  topPrediction: number;
+  @Output() prediction = new EventEmitter<number>();
 
   constructor() { }
 
@@ -40,13 +40,9 @@ export class LetterCanvasComponent implements OnInit {
 
       this.predictions = Array.from(output.dataSync());
       console.log(`predicition matrix (index equals predicted number)\n[${this.predictions}]`);
-      this.getPredictedNumber(); 
+      let predictedArray = this.predictions as number[]
+      this.prediction.emit(predictedArray.reduce((max, x, i, array) => x > array[max] ? i : max, 0));
     });
-  }
-
-  getPredictedNumber() {
-    let predictedArray = this.predictions as number[]
-    this.topPrediction = predictedArray.reduce((max, x, i, array) => x > array[max] ? i : max, 0);
   }
 
 }

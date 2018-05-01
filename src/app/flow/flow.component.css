@@ -1,0 +1,32 @@
+.challenge {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    font-family: 'Gaegu', cursive; 
+    padding: 1em;
+    border: 1px solid #444;
+    text-align: center;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.reset {
+    display: inline-block;
+    height: 28px;
+    font-family: 'Gaegu', cursive; 
+    padding: 1em;
+    border: 1px solid #444;
+    text-align: center;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: tomato;
+}
+
+.reset:active {
+    background-color: orangered;
+    color: white;
+}
