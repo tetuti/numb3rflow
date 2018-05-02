@@ -7,3 +7,5 @@ This page was made with [Angular](https://github.com/angular/angular) (version 5
 ![Alt Text](https://media.giphy.com/media/5wFuHlmh6yoA1BOdwE/giphy.gif)
 
 Numb3rflow presents the user with a challenge: Inputting 5 digits in a drawable canvas and making the model predict the correct number as fast as possible! The prediciton model used is based on pre-trained model from a convolutional neural network trained on the [MNIST](http://yann.lecun.com/exdb/mnist/) handwritten digit dataset which is comprised of over 60 thousand handwritten digits which have been normalized to 28x28 pixels.
+
+Check out the live demo on [here](https://numb3rflow.firebaseapp.com/)!
