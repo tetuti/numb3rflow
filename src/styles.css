@@ -13,8 +13,13 @@ body {
     max-width: 900px;
     min-width: 256px;
     margin: auto;
-    padding-top: 2em;
 }
+
+@media screen and (min-width: 420px) {
+    body {
+        padding-top: 3em;
+    }
+  }
 
 .prediction-wrapper {
     color: #444;
