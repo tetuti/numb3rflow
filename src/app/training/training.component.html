@@ -1,19 +1,19 @@
 <div class="container">
-  <b>Welcome to numb3rflow bootcamp!</b><br>
+  <p><b>Welcome to numb3rflow bootcamp!</b><br>
   Draw a <i>digit</i> (any of the numerals from 0 to 9) in the canvas below.<br>
-  Simply click and drag.<br>
-  Once you're done drawing place your mouse outside of the canvas to have the model predict your input!<br>
+  Simply click'n'drag/touch'n'swipe.<br>
+  Once you're done drawing place your mouse outside of the canvas/stop swiping to have the model predict your input!<br></p>
 </div>
 <div class="flex-wrapper">
     <app-digit-canvas (prediction)="onPrediction($event)"></app-digit-canvas>
     <div class="prediction-wrapper">
         {{ 'prediciton' | uppercase }}
-        <div class="predicted-number" *ngIf="prediction != undefined">
-            {{ prediction }}
+        <div class="predicted-number">
+            {{ prediction != undefined ? (prediction) : '...'}}
         </div>
     </div>
 </div>
 <div class="container small-margin-top">
-  Once you feel like you're ready for some speed drawing, press <a routerLink="/flow">flow</a> in the menu!
+  <p>Once you feel like you're ready for some speed drawing, press <a routerLink="/flow">flow</a> in the menu!</p>
 </div>
 

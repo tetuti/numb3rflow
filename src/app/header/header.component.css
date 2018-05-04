@@ -1,5 +1,5 @@
 .logo {
-    padding: 3em 3em 1em;
+    padding: 2em 2em 1em;
     background-color: #444;
     color: white;
 }
@@ -13,13 +13,13 @@
 .nav-wrapper {
     background-color: whitesmoke;
     overflow-x: hidden;
-    /* padding-left: 3em; */
+    /* padding-left: 2em; */
     display: flex;
 }
 
 .nav-wrapper > :first-child {
     margin-left: -0.5em;
-    padding-left: 3.5em;
+    padding-left: 2.5em;
 }
 
 .nav-wrapper > :last-child {

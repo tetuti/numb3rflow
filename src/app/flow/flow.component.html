@@ -1,21 +1,23 @@
 <div class="container">
-    <b>Ready to race?</b><br>
-    Input the numbers displayed as fast as possible.<br>
-    The timer starts on the first prediction. GLHF!
+    <p><b>Ready to race?</b><br>
+    Input the numbers displayed as fast as possible. The timer starts on the first prediction. GLHF!</p>
+</div>
+<div class="flex-wrapper">
+    <div *ngFor="let challenge of challenges" class="challenge">
+        {{ challenge }}
+    </div>
+    <div *ngIf="state === 'finished'" class="challenge">{{ 'win!' | uppercase }}</div>
+    <div *ngIf="state === 'finished'" class="box-text" (click)="reset()">{{ 'Want to try again?' | uppercase }}</div>
 </div>
 <div class="flex-wrapper">
 
     <app-digit-canvas (prediction)="onPredict($event)"></app-digit-canvas>
-    <div class="challenge-wrapper">
-        <div *ngFor="let challenge of challenges" class="challenge">
-            {{ challenge }}
+    <div class="prediction-wrapper">
+        {{ 'prediciton' | uppercase }}
+        <div class="predicted-number">
+            {{ prediction != undefined ? (prediction) : '...'}}
         </div>
-        <div *ngIf="state === 'finished'" class="challenge">{{ 'win!' | uppercase }}</div>
-        <div *ngIf="state === 'finished'" class="reset" (click)="reset()">{{ 'Want to try again?' | uppercase }}</div>
-        <div  class="prediction-wrapper">
-            {{ prediction != undefined ? ('Last prediciton: ' +prediction) : 'No predictions yet'}}<br>
-            {{ 'Time: ' + (currentTime | timer)  + 's' }}
-        </div>
-        
+        {{ 'Time: ' + (currentTime | timer)  + 's' }}
     </div>
+
 </div>
