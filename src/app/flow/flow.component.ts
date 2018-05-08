@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TimerService } from '../timer.service';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-flow',

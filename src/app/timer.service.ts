@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
-import { interval } from "rxjs/observable/interval";
+import { Observable ,  interval } from 'rxjs';
 
 @Injectable()
 export class TimerService {
